@@ -1,0 +1,18 @@
+@import '../base';
+@import 'mousemoving';
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 2rem 0;
+
+    span {
+        height: 50px
+    }
+
+    @import 'container-one';
+    @import 'container-two';
+}

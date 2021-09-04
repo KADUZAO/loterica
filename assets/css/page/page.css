@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+section#mousemoving {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+}
+
+section#mousemoving img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 2rem 0;
+}
+
+.container span {
+  height: 50px;
+}
+
+.container .container-one {
+  position: relative;
+  background-color: #1c1c1c;
+  width: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 1rem;
+  padding: 5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 520px) {
+  .container .container-one {
+    padding: 2rem;
+  }
+}
+
+.container .container-one span {
+  position: absolute;
+  display: block;
+}
+
+.container .container-one span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#03e9f4));
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  -webkit-animation: animate1 2s linear infinite;
+          animation: animate1 2s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+.container .container-one span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  -webkit-animation: animate2 2s linear infinite;
+          animation: animate2 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+.container .container-one span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#03e9f4));
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  -webkit-animation: animate3 2s linear infinite;
+          animation: animate3 2s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+.container .container-one span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  -webkit-animation: animate4 2s linear infinite;
+          animation: animate4 2s linear infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+.container .container-one .title {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .container-one .title img {
+  width: 28rem;
+}
+
+@media screen and (max-width: 520px) {
+  .container .container-one .title img {
+    width: 100%;
+  }
+}
+
+.container .container-one .logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container .container-one .logo img {
+    width: 80%;
+  }
+}
+
+.container .container-one .text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container .container-one .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-one .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-one .form form input, .container .container-one .form form button {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  max-width: 540px;
+  min-width: 540px;
+  margin: auto;
+}
+
+@media screen and (max-width: 520px) {
+  .container .container-one .form form input, .container .container-one .form form button {
+    min-width: 0%;
+    width: 100%;
+  }
+}
+
+.container .container-one .form form input {
+  text-align: center;
+  margin-bottom: 1rem;
+  border: 0;
+  outline: none;
+}
+
+.container .container-one .form form button {
+  background-color: #ffbb00;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container .container-two {
+  display: none;
+}
+
+.container .container-two h1 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+.container .container-two .button {
+  background-color: #ffbb00;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  max-width: 540px;
+  min-width: 540px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+  .container .container-two .button {
+    min-width: 0%;
+  }
+}
+
+.container .container-two .container__numembers {
+  padding: 10px;
+  width: 200px;
+  border-radius: 1rem;
+  border: 2px solid #ffbb00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 520px) {
+  .container .container-two .container__numembers {
+    margin: 0 auto 1.5rem auto;
+  }
+}
+
+.container .container-two .container__numembers .numbers {
+  margin: 3px;
+}
+
+.container .container-two .container__numembers .numbers p {
+  border-radius: 50%;
+  border: 1px solid #ffbb00;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #000;
+}
+/*# sourceMappingURL=page.css.map */
